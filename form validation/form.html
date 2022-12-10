@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="validation.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div id="error"></div>
+        <form action="/" method="get" class="forms" id="forms" onsubmit="kirim()">
+
+            <h1 class="label">Form Validation</h1><br>
+
+            <div class="nama">Nama</div>
+            <input type="text" name="nama" id="nama" required>
+
+            <div class="email">Email</div>
+            <input type="email" name="email" id="email" required>
+
+            <div class="jam">Pilih Jam Keberangkatan</div>
+            <input type="time" name="jam" id="jam">
+
+            <div class="tujuan">Tujuan Keberangkatan</div>
+            <input type="text" name="tujuan" id="tujuan" required>
+
+            <div class="jumlah">Jumlah Tiket</div>
+            <input type="number" name="jumlah" id="jumlah" required>
+
+            <button type="submit">submit</button>
+        </form>
+
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>
